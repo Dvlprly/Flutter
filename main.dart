@@ -26,9 +26,9 @@ class MyProfile extends StatelessWidget {
           mainAxisAlignment:
               MainAxisAlignment.center, // 위젯들을 세로 상중하 정렬할 때 사용(중심축 정렬)
           children: const [
-            Text('Hello'),
-            Text('Hello'),
-            Text('Hello'),
+            Text(''),
+            Text(''),
+            Text(''),
           ],
         ),
       ),

@@ -12,9 +12,9 @@ void main() {
 class MyProfile extends StatelessWidget {
   const MyProfile({Key? key}) : super(key: key);
 
-  @override
+    @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
         backgroundColor: Colors.amber[800],
         appBar: AppBar(
           title: const Text('JMB'),
@@ -25,7 +25,28 @@ class MyProfile extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
           child: Column(
-            children: [Text('NAME')],
+            crossAxisAlignment: CrossAxisAlignment.start, // 가로 시작점 정렬
+            children: const [
+              Text(
+                'NAME',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                ),
+              ),
+              SizedBox(
+                // text 행 사이 공간
+                height: 10.0,
+              ),
+              Text(
+                'JangManBo',
+                style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 28.0,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
         ));
   }
